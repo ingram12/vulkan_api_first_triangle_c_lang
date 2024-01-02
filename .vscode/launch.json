@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build & Run",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            //"args": [],
+            //"stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "Build",
+            "environment": [
+                {"name": "DYLD_LIBRARY_PATH", "value": "${env:VULKAN_SDK}/lib"}
+            ],
+            "osx": {
+                "MIMode": "lldb",
+                "targetArchitecture": "arm64",
+                "externalConsole": false,
+            },
+        }
+    ]
+}
