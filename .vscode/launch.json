@@ -6,8 +6,8 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            //"args": [],
-            //"stopAtEntry": false,
+            "args": [],
+            "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "preLaunchTask": "Build",
             "environment": [
